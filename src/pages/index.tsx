@@ -1,4 +1,9 @@
-export default function Home() {
+import { ReactElement } from 'react';
+import { NextPageWithLayout } from './_app';
+
+import PublicLayout from '@/components/Layout/PublicLayout';
+
+const Home: NextPageWithLayout = () => {
   return (
     <div>
       <main>
@@ -40,4 +45,10 @@ export default function Home() {
       </main>
     </div>
   );
-}
+};
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <PublicLayout>{page}</PublicLayout>;
+};
+
+export default Home;
