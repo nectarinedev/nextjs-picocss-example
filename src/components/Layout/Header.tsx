@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Header() {
   return (
     <header>
@@ -9,15 +11,10 @@ export default function Header() {
         </ul>
         <ul>
           <li>
-            <a href='#'>Link</a>
+            <Link href='/'>Home</Link>
           </li>
           <li>
-            <a href='#'>Link</a>
-          </li>
-          <li>
-            <a href='#' role='button'>
-              Button
-            </a>
+            <Link href='/signin'>Sign In</Link>
           </li>
         </ul>
       </nav>
