@@ -5,7 +5,7 @@ import PublicLayout from '@/components/Layout/PublicLayout';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <div>
+    <>
       <main>
         <article>
           <h1>Sign In</h1>
@@ -43,7 +43,7 @@ const Home: NextPageWithLayout = () => {
           </form>
         </article>
       </main>
-    </div>
+    </>
   );
 };
 

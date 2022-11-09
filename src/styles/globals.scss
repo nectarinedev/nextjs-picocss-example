@@ -1,7 +1,7 @@
 /* Custom Class-less version for React */
 
 // Set the root element
-$semantic-root-element: '#root';
+$semantic-root-element: "#__next";
 
 // Enable <header>, <main>, <footer> inside $semantic-root-element as containers
 $enable-semantic-container: true;
@@ -9,5 +9,10 @@ $enable-semantic-container: true;
 // Enable .classes
 $enable-classes: false;
 
+// Enable fluid layout
+$enable-viewport: true;
+
 // Import Pico
-@import '@picocss/pico/scss/pico';
+// @import "@picocss/pico/scss/pico";
+@import "../../node_modules/@picocss/pico/scss/pico";
+@import "../../node_modules/@picocss/pico/scss/layout/sectioning";
