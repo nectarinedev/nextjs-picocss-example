@@ -8,7 +8,7 @@ const PublicLayout = ({ children }: PublicLayoutProps) => {
   return (
     <>
       <Header />
-      {children}
+      <main>{children}</main>
     </>
   );
 };
