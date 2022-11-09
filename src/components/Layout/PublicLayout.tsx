@@ -6,10 +6,10 @@ interface PublicLayoutProps {
 
 const PublicLayout = ({ children }: PublicLayoutProps) => {
   return (
-    <div>
+    <>
       <Header />
       {children}
-    </div>
+    </>
   );
 };
 
